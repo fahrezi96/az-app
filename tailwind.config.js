@@ -7,6 +7,9 @@ module.exports = {
         mw453: '453px',
         mw666: '666px',
       },
+      width: {
+        w700: '700px',
+      },
       margin: {
         ml18: '18%',
         ml5: '5%',
