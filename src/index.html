@@ -20,16 +20,24 @@
       </header>
 
       <div class="az-screen az-screen-1 flex flex-col justify-center items-center">
-        <img src="./assets/images/agreement-paper-1.png" alt="Agreement Paper 1" width="338" />
-        <h2 class="font-normal text-2xl text-center mb-4 mt-2">
+        <h2 class="font-normal text-xl mb-4 mt-2 sm:hidden block px-4">
           Hi! sahabat Century, terima kasih sudah mempercayakan <span class="font-bold">Century</span>
         </h2>
-        <p class="text-lg text-font text-center max-w-mw666 mb-2">
+
+        <img src="./assets/images/agreement-paper-1.png" alt="Agreement Paper 1" width="338" />
+
+        <h2 class="font-normal text-2xl text-center mb-4 mt-2 sm:block hidden">
+          Hi! sahabat Century, terima kasih sudah mempercayakan <span class="font-bold">Century</span>
+        </h2>
+
+        <p class="text-lg text-font sm:text-center text-left max-w-mw666 mb-6 mt-4 px-4">
           Isilah formular berikut agar kami dapat memberikan pengingat berkala ketika obat yang ada konsumsi akan habis.
         </p>
-        <p class="text-sm font-light text-font text-center italic mb-6">
+
+        <p class="text-sm font-light text-font italic mb-6 sm:text-center text-left px-4">
           *Informasi tersebut akan dilindungi dengan akses terbatas
         </p>
+
         <button
           onclick="onStep('az-screen-1', 'az-screen-2')"
           class="bg-primary text-white py-2.5 px-32 rounded-sm font-semibold text-lg"
@@ -39,7 +47,7 @@
       </div>
 
       <div class="az-screen az-screen-2 flex-col items-center hidden">
-        <div class="w-3/4 relative lg:flex justify-center overflow-x-auto overflow-y-hidden">
+        <div class="w-3/4 relative hidden sm:block lg:flex justify-center overflow-x-auto overflow-y-hidden">
           <div class="progress flex relative z-10 lg:w-full w-w700">
             <div class="w-2/6 lg:basis-fb42">
               <div>
@@ -79,6 +87,36 @@
             </div>
           </div>
         </div>
+
+        <div class="flex items-center justify-between gap-2 w-full px-4 sm:hidden">
+          <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-primary text-white text-sm rounded-full w-6 h-6 flex items-center justify-center font-bold z-10 relative"
+              >
+                1
+              </span>
+              <span>Input nomor Whatsapp</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-disable text-white text-sm rounded-full w-6 h-6 flex items-center justify-center font-bold z-10 relative"
+              >
+                2
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-disable text-white text-sm rounded-full w-6 h-6 flex items-center justify-center font-bold z-10 relative"
+              >
+                3
+              </span>
+            </div>
+          </div>
+        </div>
+
         <img src="./assets/images/step-1.png" />
         <p class="text-font text-sm mb-4">Masukan nomor whatsapp anda dibawah ini</p>
         <div class="border border-primary rounded-sm p-2 flex items-center w-48 mb-2">
@@ -103,7 +141,7 @@
       </div>
 
       <div class="az-screen az-screen-3 flex-col items-center hidden">
-        <div class="w-3/4 relative lg:flex justify-center overflow-x-auto overflow-y-hidden">
+        <div class="w-3/4 relative hidden sm:block lg:flex justify-center overflow-x-auto overflow-y-hidden">
           <div class="progress flex relative z-10 lg:w-full w-w700">
             <div class="done w-2/6 lg:basis-fb42">
               <div>
@@ -143,6 +181,36 @@
             </div>
           </div>
         </div>
+
+        <div class="flex items-center justify-between gap-2 w-full px-4 sm:hidden">
+          <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-primary text-white text-sm rounded-full w-6 h-6 flex items-center justify-center font-bold z-10 relative"
+              >
+                1
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-primary text-white text-sm rounded-full w-6 h-6 flex items-center justify-center font-bold z-10 relative"
+              >
+                2
+              </span>
+              <span>Input nama pasien</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-disable text-white text-sm rounded-full w-6 h-6 flex items-center justify-center font-bold z-10 relative"
+              >
+                3
+              </span>
+            </div>
+          </div>
+        </div>
+
         <img src="./assets/images/step-2.png" />
         <p class="text-font text-sm mb-4">Masukan nama lengkap anda dibawah ini</p>
         <div class="border border-primary rounded-sm p-2 flex items-center w-48 mb-2">
@@ -166,7 +234,7 @@
       </div>
 
       <div class="az-screen az-screen-4 flex-col items-center hidden">
-        <div class="w-3/4 relative lg:flex justify-center overflow-x-auto overflow-y-hidden">
+        <div class="w-3/4 relative hidden sm:block lg:flex justify-center overflow-x-auto overflow-y-hidden">
           <div class="progress flex relative z-10 lg:w-full w-w700">
             <div class="done w-2/6 lg:basis-fb42">
               <div>
@@ -207,17 +275,48 @@
           </div>
         </div>
 
+        <div class="flex items-center justify-between gap-2 w-full px-4 sm:hidden">
+          <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-primary text-white text-sm rounded-full w-6 h-6 flex items-center justify-center font-bold z-10 relative"
+              >
+                1
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-primary text-white text-sm rounded-full w-6 h-6 flex items-center justify-center font-bold z-10 relative"
+              >
+                2
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-primary text-white text-sm rounded-full w-6 h-6 flex items-center justify-center font-bold z-10 relative"
+              >
+                3
+              </span>
+              <span>Input jenis & jumlah obat</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2"></div>
+        </div>
+
         <img src="./assets/images/step-3n4.png" />
         <div class="flex gap-7 mb-6 flex-col lg:flex-row">
-          <div>
+          <div class="hidden sm:block">
             <p class="text-font text-lg mb-4">Pilih jenis obat yang ingin dibeli</p>
             <p class="text-font text-lg">Pilih jumlah obat yang ingin dibeli</p>
           </div>
           <div>
+            <p class="text-font mb-4 sm:hidden block">Pilih jenis obat yang ingin dibeli</p>
             <select class="border border-primary p-0.5 w-72 mb-4">
               <option value="">-- Pilih Nama Obat --</option>
               <option value="crestor">Crestor</option>
             </select>
+            <p class="text-font mb-4 sm:hidden block">Pilih jumlah obat yang ingin dibeli</p>
             <div>
               <div class="flex items-center gap-2 mb-2">
                 <div class="inline-flex items-center">
